@@ -8,7 +8,7 @@ export function Dashboard(){
     useEffect(() => {        
         const fetchData = async () => {
             try {
-                const response = await axios.get("", {
+                const response = await axios.get("https://payments-app-nab7.onrender.com/api/v1/account/balance", {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`
                     }

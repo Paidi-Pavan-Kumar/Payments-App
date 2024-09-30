@@ -25,7 +25,7 @@ export function SignUp(){
                 <div className="pt-4">
                     <Button label={"Sign up"} onClick={async ()=>{
                     try{
-                    const response = await axios.post("",{
+                    const response = await axios.post("https://payments-app-nab7.onrender.com/api/v1/user/signup",{
                             username:username,
                             firstName:firstName,
                             lastName:lastName,

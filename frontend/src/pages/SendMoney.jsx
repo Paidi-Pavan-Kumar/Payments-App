@@ -40,7 +40,7 @@ export const SendMoney = () => {
                     <button
                     onClick={async()=>{
                         try{
-                            const response=await axios.post("",{
+                            const response=await axios.post("https://payments-app-nab7.onrender.com/api/v1/account/transfer",{
                             amount:amount,
                             to:id,
                         },{
